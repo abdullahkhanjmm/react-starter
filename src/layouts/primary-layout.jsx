@@ -9,12 +9,12 @@ export default function PrimaryLayout({children}) {
 				<Link to={ROUTES.HOME} className="text-white">
 					Home
 				</Link>
-				<Link to={ROUTES.SERVICES} className="text-white">
+				{/* <Link to={ROUTES.SERVICES} className="text-white">
 					Services
 				</Link>
 				<Link to={ROUTES.CONTACT} className="text-white">
 					Contact Us
-				</Link>
+				</Link> */}
 			</header>
 			<main>{children}</main>
 			{/* 🌍 ENVIRONMENT INFO BAR */}
@@ -23,7 +23,10 @@ export default function PrimaryLayout({children}) {
 				<strong>Branch:</strong> {import.meta.env.VITE_GIT_BRANCH} &nbsp;|&nbsp;
 				<strong>API:</strong> {import.meta.env.VITE_API_URL}
 			</div>
-			<footer>footer</footer>
+			{/* FOOTER */}
+			<footer className="bg-gray-800 py-4 text-center text-white">
+				© 2025 Visual-X. All rights reserved.
+			</footer>
 		</Fragment>
 	);
 }
